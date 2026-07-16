@@ -18,6 +18,7 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 - Delivery check: [final-skill-check.md](references/final-skill-check.md)
 - Agent execution protocol: [agent-protocol.md](references/agent-protocol.md)
 - Output contracts: [output-contracts.md](references/output-contracts.md)
+- Preview rules: [preview-rules.md](references/preview-rules.md)
 
 ## Workflow
 
@@ -27,8 +28,9 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 4. Select only existing or explicitly created props-driven components. Choose the applicable output contract before producing code or JSON.
 5. Implement with Vue 2.7 Options API and Element UI. Keep mock data at the page boundary and pass data through props.
 6. Apply Figma tokens before local adjustments. Use `#0080FF`, not legacy `#409EFF`.
-7. Include loading, empty, and normal states for every data region; run the workspace’s smallest relevant safe validation.
-8. Report edited files, validation evidence, assumptions, and unresolved gaps.
+7. Build or update the applicable preview described in `preview-rules.md`; include normal, loading, and empty states for every data region.
+8. Run the workspace’s smallest relevant safe validation and verify the preview path.
+9. Report edited files, preview command/URL, validation evidence, assumptions, and unresolved gaps.
 
 ## Non-negotiable rules
 
