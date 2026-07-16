@@ -20,6 +20,20 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 - Output contracts: [output-contracts.md](references/output-contracts.md)
 - Preview rules: [preview-rules.md](references/preview-rules.md)
 
+## Default interaction
+
+Treat the user’s next natural-language message as the page requirement; users do not need to paste a prefix or select a contract.
+
+If the skill is invoked without a concrete page requirement, send this concise onboarding message and wait:
+
+```text
+我会按智客 Figma 规范，把你的需求生成成可预览的 PC 页面：先识别页面类型和输出方式，再生成可复用组件、mock 数据与正常/加载/空状态预览，最后做校验。
+
+请直接描述你想要的页面，例如“生成科技金融潜客筛选页，支持行业和地区筛选，展示企业卡和分页”。
+```
+
+If the user already supplies a concrete requirement, do not repeat the onboarding or ask them to choose a contract. Briefly state the selected page mode and output contract, then begin the workflow. Ask one focused question only when a missing choice materially changes the deliverable; otherwise make a documented, conservative assumption.
+
 ## Workflow
 
 1. Read `agent-protocol.md`, then inspect the target workspace, package manifest, existing conventions, and uncommitted changes before editing.
