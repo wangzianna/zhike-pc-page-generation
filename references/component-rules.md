@@ -5,6 +5,8 @@
 - Tables use 40px header/rows, fixed right operation column, semantic tags, truncation, and independent empty/loading states.
 - Metric card: label → large value+unit → explanatory line; limit a group to six metrics.
 - Enterprise header/card: name, operating status, score/grade, tags, then business facts.
+- Enterprise search panel: preserve the order region scope → keyword → core cascading filters → dense grouped condition triggers → selected-condition chips. Use props-driven condition groups and a collapse toggle; do not hardcode host filter schema or request logic.
+- Enterprise result list: use a white, divider-separated list when dense enterprise screening is requested; each row is name/status/grades → tags → core facts → contact and address facts, with follow/select actions aligned right.
 - Grade tag: compact “code + label”; never use color without textual grade.
 - Event card: severity, title, timestamp, summary, subject, and category.
 - Dialogs have title/content/footer regions; use 480px for ordinary forms and keep workflow/API logic outside reusable dialogs.

@@ -8,6 +8,8 @@ Order: range/base filters → condition groups → selected-condition chips → 
 - Keep result count, sorting, batch actions, empty/loading states, and pagination.
 - Enterprise cards show name, status, core score, tags, then key facts.
 
+For the high-density enterprise-search variant, use `EnterpriseSearchFacetPanel` above `EnterpriseResultList` rather than forcing the result into a table or oversized cards. Read `high-frequency-patterns.md` for the reusable structure and props.
+
 ## 标准管理列表页
 
 Order: title and one primary action → 4–6 summary metrics → filters → table → pagination.

@@ -8,5 +8,6 @@
 - [ ] Components render with explicit props and mock data; no API, Store, Router, permissions, map/graph, upload/download, or host aliases exist in reusable code.
 - [ ] When present, region filtering is province/city/district cascading and industry filtering is national-standard four-level cascading; parent changes, clear actions, and full-path display are verified.
 - [ ] When a reference image is supplied, its layout and component intent are mapped; any conflicts with Zhike rules, unsupported details, and conservative assumptions are reported.
+- [ ] For enterprise screening/list pages, dense filters and result rows follow the shared high-frequency pattern; filter, selected chips, sort, pagination, follow/selection, loading, and empty states stay synchronized.
 - [ ] Registry/pageSpec contains only known ids and valid props.
 - [ ] No legacy color, mixed libraries, excessive inline styles, or decorative noise remains.
