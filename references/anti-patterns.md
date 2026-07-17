@@ -1,4 +1,4 @@
-# 反例与禁止项
+# Anti-patterns and Prohibitions
 
 - Do not copy historical long pages, API wiring, permissions, routing shells, iframes, maps/graphs, uploads/downloads, or approval flows.
 - Do not mix Element UI and Ant Design Vue, use `#409EFF`, or rely on framework default semantic colors.

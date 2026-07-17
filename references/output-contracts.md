@@ -1,8 +1,8 @@
-# 输出契约
+# Output Contracts
 
 Choose one contract before implementation. Do not mix them.
 
-## A. 可运行页面/组件
+## A. Runnable page/component
 
 Use when the request is for source code or a page in an existing Vue project.
 

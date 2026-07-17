@@ -1,4 +1,4 @@
-# Agent 执行协议
+# Agent Execution Protocol
 
 Apply this protocol regardless of the host agent, IDE, or tool provider.
 

@@ -1,4 +1,4 @@
-# 视觉规则
+# Visual Rules
 
 Figma rules override legacy source styles.
 

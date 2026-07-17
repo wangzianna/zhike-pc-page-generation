@@ -1,4 +1,4 @@
-# 代码规则
+# Code Rules
 
 - Use Vue 2.7 Options API and JavaScript.
 - Use Element UI; never mix Ant Design Vue on one page.

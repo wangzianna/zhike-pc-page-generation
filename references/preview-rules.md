@@ -1,4 +1,4 @@
-# 预览规则
+# Preview Rules
 
 Every generated page must have a low-friction local preview. Reuse the project’s existing preview, Storybook, playground, or development server before creating a new mechanism. Do not add a dependency solely for previewing.
 
