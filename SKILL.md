@@ -15,6 +15,7 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 - Tokens and visual rules: [visual-rules.md](references/visual-rules.md)
 - Vue/code constraints: [code-rules.md](references/code-rules.md)
 - Prompt/output examples: [examples.md](references/examples.md)
+- Test prompt suite: [test-cases.md](examples/test-cases.md)
 - Prohibitions: [anti-patterns.md](references/anti-patterns.md)
 - Delivery check: [final-skill-check.md](references/final-skill-check.md)
 - Agent execution protocol: [agent-protocol.md](references/agent-protocol.md)
