@@ -1,6 +1,6 @@
 ---
 name: zhike-pc-page-generation
-description: Generate or refactor Zhike-style desktop B-end pages from natural-language requirements in Vue 2.7. Use when an agent needs a Zhike PC list page, dashboard, enterprise profile, management master-detail page, or reusable visual component that must follow the Zhike Figma design system and run without original-project API, store, router, permission, map, upload, or graph dependencies.
+description: Generate or refactor Zhike-style desktop B-end pages from natural-language requirements or reference screenshots in Vue 2.7. Use when an agent needs a Zhike PC list page, dashboard, enterprise profile, management master-detail page, or reusable visual component that must follow the Zhike Figma design system and run without original-project API, store, router, permission, map, upload, or graph dependencies.
 ---
 
 # 智客 PC 页面生成
@@ -12,6 +12,7 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 - Page layout: [page-patterns.md](references/page-patterns.md)
 - Component selection: [component-rules.md](references/component-rules.md)
 - Region and industry filter defaults: [filter-rules.md](references/filter-rules.md)
+- Reference-image workflow: [image-reference-rules.md](references/image-reference-rules.md)
 - Tokens and visual rules: [visual-rules.md](references/visual-rules.md)
 - Vue/code constraints: [code-rules.md](references/code-rules.md)
 - Prompt/output examples: [examples.md](references/examples.md)
@@ -24,7 +25,7 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 
 ## Default interaction
 
-Treat the user’s next natural-language message as the page requirement; users do not need to paste a prefix or select a contract.
+Treat the user’s next natural-language message and any attached reference image as the page requirement; users do not need to paste a prefix or select a contract.
 
 If the skill is invoked without a concrete page requirement, send this concise onboarding message and wait:
 
@@ -34,13 +35,13 @@ If the skill is invoked without a concrete page requirement, send this concise o
 请直接描述你想要的页面，例如“生成科技金融潜客筛选页，支持行业和地区筛选，展示企业卡和分页”。
 ```
 
-If the user already supplies a concrete requirement, do not repeat the onboarding or ask them to choose a contract. Briefly state the selected page mode and output contract, then begin the workflow. Ask one focused question only when a missing choice materially changes the deliverable; otherwise make a documented, conservative assumption.
+If the user already supplies a concrete requirement or a usable reference image, do not repeat the onboarding or ask them to choose a contract. Briefly state the selected page mode and output contract, then begin the workflow. Ask one focused question only when a missing choice materially changes the deliverable; otherwise make a documented, conservative assumption.
 
 ## Workflow
 
 1. Read `agent-protocol.md`, then inspect the target workspace, package manifest, existing conventions, and uncommitted changes before editing.
-2. Read `visual-rules.md`, `page-patterns.md`, and references relevant to the requested page. Requirements containing region or industry filters must also read `filter-rules.md`.
-3. Identify `list`, `dashboard`, `enterprise-detail`, or `master-detail`; build a compact module plan with task, title, filters, metrics, primary content, secondary content, and states.
+2. Read `visual-rules.md`, `page-patterns.md`, and references relevant to the requested page. Requirements containing region or industry filters must also read `filter-rules.md`; attached reference images must also read `image-reference-rules.md`.
+3. For an attached image, extract a compact reference map before planning. Identify `list`, `dashboard`, `enterprise-detail`, or `master-detail`; build a compact module plan with task, title, filters, metrics, primary content, secondary content, and states.
 4. Select only existing or explicitly created props-driven components. Choose the applicable output contract before producing code or JSON.
 5. Implement with Vue 2.7 Options API and Element UI. Keep mock data at the page boundary and pass data through props.
 6. Apply Figma tokens before local adjustments. Use `#0080FF`, not legacy `#409EFF`.
