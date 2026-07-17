@@ -6,5 +6,6 @@
 - [ ] A local preview demonstrates normal, loading, and empty states without host APIs.
 - [ ] Preview command, route/URL, and manual verification steps are reported.
 - [ ] Components render with explicit props and mock data; no API, Store, Router, permissions, map/graph, upload/download, or host aliases exist in reusable code.
+- [ ] When present, region filtering is province/city/district cascading and industry filtering is national-standard four-level cascading; parent changes, clear actions, and full-path display are verified.
 - [ ] Registry/pageSpec contains only known ids and valid props.
 - [ ] No legacy color, mixed libraries, excessive inline styles, or decorative noise remains.

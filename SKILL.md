@@ -11,6 +11,7 @@ Turn a business requirement into a runnable, props-driven Zhike-style PC page or
 
 - Page layout: [page-patterns.md](references/page-patterns.md)
 - Component selection: [component-rules.md](references/component-rules.md)
+- Region and industry filter defaults: [filter-rules.md](references/filter-rules.md)
 - Tokens and visual rules: [visual-rules.md](references/visual-rules.md)
 - Vue/code constraints: [code-rules.md](references/code-rules.md)
 - Prompt/output examples: [examples.md](references/examples.md)
@@ -37,7 +38,7 @@ If the user already supplies a concrete requirement, do not repeat the onboardin
 ## Workflow
 
 1. Read `agent-protocol.md`, then inspect the target workspace, package manifest, existing conventions, and uncommitted changes before editing.
-2. Read `visual-rules.md`, `page-patterns.md`, and references relevant to the requested page.
+2. Read `visual-rules.md`, `page-patterns.md`, and references relevant to the requested page. Requirements containing region or industry filters must also read `filter-rules.md`.
 3. Identify `list`, `dashboard`, `enterprise-detail`, or `master-detail`; build a compact module plan with task, title, filters, metrics, primary content, secondary content, and states.
 4. Select only existing or explicitly created props-driven components. Choose the applicable output contract before producing code or JSON.
 5. Implement with Vue 2.7 Options API and Element UI. Keep mock data at the page boundary and pass data through props.
